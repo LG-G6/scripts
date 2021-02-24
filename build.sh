@@ -1,10 +1,10 @@
 #!/bin/bash
 source scripts/sync.sh
-make clean
-# rm -rf device/lge/h870/
-# rm -rf device/lge/h870ds/
-# rm -rf device/lge/h872/
-# rm -rf device/lge/us997/
+# make clean
+rm -rf out/target/product/h870/
+rm -rf out/target/product/h870ds/
+rm -rf out/target/product/h872/
+rm -rf out/target/product/us997/
 brunch h872
 brunch h870
 brunch h870ds
