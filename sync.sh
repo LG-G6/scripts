@@ -12,7 +12,7 @@ rm -rf device/lge/us997/
 
 repo sync --force-sync -j32 -q
 source build/envsetup.sh
-source scripts/repopick.sh
+repopick -t android-11.0.0_r32
 
 cd frameworks/base/
 # git remote add camfix https://github.com/LG-G6/android_frameworks_base.git
