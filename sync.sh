@@ -18,7 +18,7 @@ cd frameworks/base/
 # git remote add extras https://github.com/LG-G6/android_frameworks_base.git
 git fetch extras
 # CAM FIXES, MICROG, CHARGING ANIMATION
-git cherry-pick ae63d669a09fd6aa329c52f12915b34a8d372d68 382163573c199308ebc8d3706e4b9405a3455d05 826b9344ccb9d533f763360203f54f42d542aa01 57738d2b938c4beb456a596ebecf5f8db1f0521e
+git cherry-pick 2bb23e9ca3adb657b64147e29c53fd7dac383bb6 e4af95d7a4da898ef0ac2e9085806cd0f8cbc0b2 826b9344ccb9d533f763360203f54f42d542aa01 57738d2b938c4beb456a596ebecf5f8db1f0521e
 cd ../../
 
 rm -rf packages/apps/Updater/
