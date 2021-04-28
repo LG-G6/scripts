@@ -1,4 +1,5 @@
 #!/bin/bash
+set -e
 source scripts/sync.sh
 # make clean
 rm -rf out/target/product/h870/

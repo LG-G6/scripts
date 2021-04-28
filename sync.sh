@@ -1,4 +1,5 @@
 #!/bin/bash
+set -e
 
 rm -rf vendor/lge/
 rm -rf frameworks/base/
