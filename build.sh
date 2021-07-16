@@ -1,11 +1,7 @@
 #!/bin/bash
-set -e
 source scripts/sync.sh
 # make clean
-rm -rf out/target/product/h870/
-rm -rf out/target/product/h870ds/
-rm -rf out/target/product/h872/
-rm -rf out/target/product/us997/
+rm -rf out/target/product/*
 brunch h872
 brunch h870
 brunch h870ds

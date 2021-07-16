@@ -1,5 +1,4 @@
 #!/bin/bash
-set -e
 
 rm -rf vendor/lge/
 rm -rf frameworks/base/
@@ -11,9 +10,9 @@ rm -rf device/lge/h870ds/
 rm -rf device/lge/h872/
 rm -rf device/lge/us997/
 
-repo sync --force-sync -j32 -q
+repo sync --force-sync -j32
 source build/envsetup.sh
-# repopick -t android-11.0.0_r34
+# repopick -t android-11.0.0_r39
 
 cd frameworks/base/
 git fetch https://github.com/LG-G6/android_frameworks_base.git lineage-18.1
