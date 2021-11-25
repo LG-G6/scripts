@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <project name="LG-G6/android_device_lge_h870" path="device/lge/h870" remote="github" revision="lineage-18.1" />
+  <project name="LG-G6/android_device_lge_h870ds" path="device/lge/h870ds" remote="github" revision="lineage-18.1" />
+  <project name="LG-G6/android_device_lge_h872" path="device/lge/h872" remote="github" revision="lineage-18.1" />
+  <project name="LG-G6/android_device_lge_us997" path="device/lge/us997" remote="github" revision="lineage-18.1" />
+  <project name="LG-G6/android_device_lge_msm8996-common" path="device/lge/msm8996-common" remote="github" revision="v20j/lineage-18.1" />
+  <project name="LG-G6/android_kernel_lge_msm8996" path="kernel/lge/msm8996" remote="github" revision="v20j/lineage-18.1" />
+  <project name="LG-G6/proprietary_vendor_lge" path="vendor/lge" remote="github" revision="v20j/lineage-18.1" />
+  <project name="LG-G6/android_device_lge_g6-common" path="device/lge/g6-common" remote="github" revision="v20j/lineage-18.1" />
+  <project name="LineageOS/android_hardware_sony_timekeep" path="hardware/sony/timekeep" remote="github" />
+  <project name="LineageOS/android_device_lge_common" path="device/lge/common" remote="github" />
+  <remove-project name="LineageOS/android_device_lge_common" />
+</manifest>

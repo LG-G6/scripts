@@ -21,6 +21,5 @@ cd ~/android/builds/lineage/h870/ && rm lineage_h870-ota*.zip *.md5sum
 sftp bernardobas@frs.sourceforge.net:/home/pfs/project/lg-g6/LineageOS\ 18.1/H870/ <<< $'put *.*'
 
 echo -e "\nAndroid builds completed and uploaded\n";
-# notify-send Android "Builds uploaded" -i /usr/share/icons/Moka/96x96/apps/android-studio.png
 
 cd ~/android/los18/
