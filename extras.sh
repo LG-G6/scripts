@@ -1,7 +1,6 @@
 #!/bin/bash
 
 # repopick -t R_asb_2021-11
-repopick 318278
 
 # microG support
 cd frameworks/base/

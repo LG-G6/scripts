@@ -10,4 +10,5 @@ rm -rf vendor/lge/ && repo sync --force-sync vendor/lge/
 rm -rf kernel/lge/msm8996/ && repo sync --force-sync kernel/lge/msm8996/
 rm -rf device/lge/* && repo sync --force-sync device/lge/h830 && repo sync --force-sync device/lge/h850 && repo sync --force-sync device/lge/rs988 && repo sync --force-sync device/lge/msm8996-common && repo sync --force-sync device/lge/g5-common && repo sync --force-sync device/lge/common
 
+source build/envsetup.sh
 source scripts/extras.sh
