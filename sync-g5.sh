@@ -9,7 +9,7 @@ rm -rf device/lge/h830/
 rm -rf device/lge/h850/
 rm -rf device/lge/rs988/
 
-repo sync --force-sync -j32
+repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
 source build/envsetup.sh
 
 source scripts/extras.sh
