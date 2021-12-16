@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <project name="LG-G5/android_device_lge_h830" path="device/lge/h830" remote="github" revision="lineage-18.1" />
-  <project name="LG-G5/android_device_lge_h850" path="device/lge/h850" remote="github" revision="lineage-18.1" />
-  <project name="LG-G5/android_device_lge_rs988" path="device/lge/rs988" remote="github" revision="lineage-18.1" />
-  <project name="LG-G5/android_device_lge_g5-common" path="device/lge/g5-common" remote="github" revision="lineage-18.1" />
-  <project name="LG-G5/android_device_lge_msm8996-common" path="device/lge/msm8996-common" remote="github" revision="lineage-18.1" />
-  <project name="LG-G5/android_kernel_lge_msm8996" path="kernel/lge/msm8996" remote="github" revision="lineage-18.1" />
-  <project name="LG-G5/proprietary_vendor_lge" path="vendor/lge" remote="github" revision="lineage-18.1" />
-  <project name="LineageOS/android_device_lge_common" path="device/lge/common" remote="github" />
-  <project name="LineageOS/android_hardware_sony_timekeep" path="hardware/sony/timekeep" remote="github" />
+  <project name="VortexHD/android_device_lge_h830" path="device/lge/h830" remote="github" revision="11" />
+  <project name="VortexHD/android_device_lge_h850" path="device/lge/h850" remote="github" revision="11" />
+  <project name="VortexHD/android_device_lge_rs988" path="device/lge/rs988" remote="github" revision="11" />
+  <project name="VortexHD/device_lge_g5-common" path="device/lge/g5-common" remote="github" revision="11" />
+  <project name="VortexHD/device_lge_msm8996-common" path="device/lge/msm8996-common" remote="github" revision="11" />
+  <project name="stendro/msm8996_lge_kernel" path="kernel/lge/msm8996" remote="github" revision="mk2000-custom" />
+  <project name="VortexHD/vendor_lge" path="vendor/lge" remote="github" revision="11" />
+  <project name="VortexHD/android_device_lge_common" path="device/lge/common" remote="github" revision="11" />
 </manifest>
