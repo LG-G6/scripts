@@ -11,3 +11,4 @@ rm -rf device/lge/* && repo sync --force-sync device/lge/h870 && repo sync --for
 
 source build/envsetup.sh
 source scripts/fixes.sh
+source scripts/extras.sh
