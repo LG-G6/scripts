@@ -1,8 +1,7 @@
 #!/bin/bash
 
 rm .repo/local_manifests/roomservice.xml
-cp scripts/roomservice-g6.xml .repo/local_manifests/
-mv .repo/local_manifests/roomservice-g6.xml .repo/local_manifests/roomservice.xml
+cp scripts/roomservice.xml .repo/local_manifests/
 
 rm -rf packages/modules/NetworkStack/ && repo sync --force-sync packages/modules/NetworkStack/
 rm -rf frameworks/base/ && repo sync --force-sync frameworks/base/
@@ -12,4 +11,3 @@ rm -rf device/lge/* && repo sync --force-sync device/lge/h870 && repo sync --for
 
 source build/envsetup.sh
 source scripts/fixes.sh
-source scripts/extras.sh
