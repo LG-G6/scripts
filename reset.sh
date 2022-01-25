@@ -1,13 +1,11 @@
 #!/bin/bash
 
-rm .repo/local_manifests/roomservice.xml
-cp scripts/roomservice.xml .repo/local_manifests/
-
 rm -rf packages/modules/NetworkStack/ && repo sync --force-sync packages/modules/NetworkStack/
 rm -rf frameworks/base/ && repo sync --force-sync frameworks/base/
-rm -rf vendor/lge/ && repo sync --force-sync vendor/lge/
-rm -rf kernel/lge/msm8996/ && repo sync --force-sync kernel/lge/msm8996/
-rm -rf device/lge/* && repo sync --force-sync device/lge/h870 && repo sync --force-sync device/lge/h870ds && repo sync --force-sync device/lge/h872 && repo sync --force-sync device/lge/us997 && repo sync --force-sync device/lge/msm8996-common && repo sync --force-sync device/lge/g6-common
+rm -rf vendor/lge/ && git clone https://github.com/LG-G6/proprietary_vendor_lge.git -b lineage-18.1 vendor/lge/
+rm -rf kernel/lge/msm8996/ && git clone https://github.com/LG-G6/android_kernel_lge_msm8996.git -b lineage-18.1 kernel/lge/msm8996/
+rm -rf device/lge/* && git clone https://github.com/LG-G6/android_device_lge_msm8996-common.git -b cr-9.0 device/lge/msm8996-common/ && git clone https://github.com/LG-G6/android_device_lge_g6-common.git -b lineage-18.1 device/lge/g6-common/ && git clone https://github.com/LG-G6/android_device_lge_h870.git -b cr-9.0 device/lge/h870/ && git clone https://github.com/LG-G6/android_device_lge_h870ds.git -b cr-9.0 device/lge/h870ds/ && git clone https://github.com/LG-G6/android_device_lge_h872.git -b cr-9.0 device/lge/h872/ && git clone https://github.com/LG-G6/android_device_lge_us997.git -b cr-9.0 device/lge/us997/
 
 source build/envsetup.sh
 source scripts/fixes.sh
+source scripts/extras.sh

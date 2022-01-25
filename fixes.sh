@@ -2,8 +2,8 @@
 
 # Cam fix for LG G6
 cd frameworks/base/
-git fetch https://github.com/LG-G6/android_frameworks_base.git lineage-18.1
-git cherry-pick 2bb23e9ca3adb657b64147e29c53fd7dac383bb6 e4af95d7a4da898ef0ac2e9085806cd0f8cbc0b2
+git fetch https://github.com/LG-G6/android_frameworks_base.git cr-9.0
+git cherry-pick 685b6835117755d2e8b8d8d2cf31c4d2e58805ef a7cf992e4e71ee8883ec5c79ad0f0eb7142f7046
 cd ../../
 
 # Fix for LG G6 TCP errors
