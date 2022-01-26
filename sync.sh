@@ -5,3 +5,5 @@ source build/envsetup.sh
 
 source scripts/fixes.sh
 source scripts/extras.sh
+
+rm -rf packages/apps/CarbonDelta
