@@ -11,6 +11,4 @@
   <project name="LG-G6/gcc-10.3-aarch64" path="prebuilts/gcc/linux-x86/aarch64/gcc-10.3-aarch64" remote="github" revision="main" />
   <project name="LG-G6/gcc-10.3-arm" path="prebuilts/gcc/linux-x86/arm/gcc-10.3-arm" remote="github" revision="main" />
   <project name="LineageOS/android_hardware_sony_timekeep" path="hardware/sony/timekeep" remote="github" />
-  <project name="LineageOS/android_device_lge_common" path="device/lge/common" remote="github" />
-  <remove-project name="LineageOS/android_device_lge_common" />
 </manifest>
