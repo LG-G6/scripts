@@ -3,7 +3,7 @@
 # PixelProps
 cd frameworks/base/
 git fetch https://github.com/LG-G6/android_frameworks_base.git dot11
-git cherry-pick d42b10a2fa811ab6cd4d35be2cc62c337524e5b1 ab71c4df6153ee8c578a02d60c2ee195878eccc5
+git cherry-pick d42b10a2fa811ab6cd4d35be2cc62c337524e5b1 ab71c4df6153ee8c578a02d60c2ee195878eccc5 8fab24487b8dfc51f5a100e711a698dddb015477
 cd ../../
 
 # December 2021 ASB
@@ -35,3 +35,7 @@ cd packages/providers/MediaProvider/ && git fetch https://github.com/LineageOS/a
 cd packages/services/Telecomm/ && git fetch https://github.com/LineageOS/android_packages_services_Telecomm refs/changes/67/321267/2 && git cherry-pick FETCH_HEAD && cd ../../../
 cd system/bt/ && git fetch https://github.com/LineageOS/android_system_bt refs/changes/68/321268/2 && git cherry-pick FETCH_HEAD && git fetch https://github.com/LineageOS/android_system_bt refs/changes/69/321269/2 && git cherry-pick FETCH_HEAD && cd ../../
 cd build/make/ && git fetch https://github.com/LineageOS/android_build refs/changes/89/322389/2 && git cherry-pick FETCH_HEAD && cd ../../
+
+# February 2022 ASB
+cd vendor/qcom/opensource/commonsys/system/bt && git fetch https://github.com/LineageOS/android_vendor_qcom_opensource_system_bt refs/changes/34/323234/1 && git cherry-pick FETCH_HEAD && cd ../../../../../../
+cd build/make/ && git fetch https://github.com/LineageOS/android_build refs/changes/13/323313/4 && git cherry-pick FETCH_HEAD && cd ../../
