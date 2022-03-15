@@ -1,10 +1,19 @@
 #!/bin/bash
 
+GREEN='\033[0;32m' # Green
+NC='\033[0m' # No Color
+
 # PixelProps
 cd frameworks/base/
 git fetch https://github.com/LG-G6/android_frameworks_base.git r11.0
 git cherry-pick 9d7d2fda4206eeb354b94894d5364042b81c3f55 32632411b7392c6f9b085cf86332134a1fc88648 bc23d24b74b406893d178b18a9462eff87920b9e 1a3389f32fc4e828b134031cb68898485c682dd0
 cd ../../
+
+printf "\n"
+printf "${GREEN}===========================================\n"
+printf "PIXELPROPS SUCCESFULLY MERGED\n"
+printf "===========================================\n"
+printf "${NC}\n"
 
 # November 2021 ASB
 cd external/robolectric-shadows/ && git fetch https://github.com/LineageOS/android_external_robolectric-shadows refs/changes/40/318540/2 && git cherry-pick FETCH_HEAD && cd ../../
@@ -27,6 +36,12 @@ cd packages/apps/ManagedProvisioning && git fetch https://github.com/LineageOS/a
 # cd vendor/nxp/opensource/sn100x/halimpl && git fetch https://github.com/LineageOS/android_vendor_nxp_opensource_halimpl refs/changes/62/318562/1 && git cherry-pick FETCH_HEAD && cd ../../../../../
 cd build/make/ && git fetch https://github.com/LineageOS/android_build refs/changes/60/318560/1 && git cherry-pick FETCH_HEAD && cd ../../
 
+printf "\n"
+printf "${GREEN}===========================================\n"
+printf "NOVEMBER 2021 ASB SUCCESFULLY MERGED\n"
+printf "===========================================\n"
+printf "${NC}\n"
+
 # December 2021 ASB
 cd external/tremolo/ && git fetch https://github.com/LineageOS/android_external_tremolo refs/changes/65/319965/2 && git cherry-pick FETCH_HEAD && cd ../../
 cd frameworks/av/ && git fetch https://github.com/LineageOS/android_frameworks_av refs/changes/66/319966/2 && git cherry-pick FETCH_HEAD && git fetch https://github.com/LineageOS/android_frameworks_av refs/changes/67/319967/2 && git cherry-pick FETCH_HEAD && cd ../../
@@ -40,6 +55,12 @@ cd packages/providers/MediaProvider/ && git fetch https://github.com/LineageOS/a
 # cd system/bt/ && git fetch https://github.com/LineageOS/android_system_bt refs/changes/81/319981/2 && git cherry-pick FETCH_HEAD && cd ../../
 cd system/tools/aidl/ && git fetch https://github.com/LineageOS/android_system_tools_aidl refs/changes/82/319982/2 && git cherry-pick FETCH_HEAD && cd ../../../
 cd build/make/ && git fetch https://github.com/LineageOS/android_build refs/changes/62/320162/3 && git cherry-pick FETCH_HEAD && cd ../../
+
+printf "\n"
+printf "${GREEN}===========================================\n"
+printf "DECEMBER 2021 ASB SUCCESFULLY MERGED\n"
+printf "===========================================\n"
+printf "${NC}\n"
 
 # Jaunary 2022 ASB
 # cd bootable/recovery && git fetch https://github.com/LG-G6/android_bootable_recovery.git dot11 && git cherry-pick 6d8ff7fc4b6c3bf3913f64218817c5b8caf8c869 && cd ../../
@@ -58,6 +79,48 @@ cd packages/services/Telecomm/ && git fetch https://github.com/LineageOS/android
 # cd system/bt/ && git fetch https://github.com/LineageOS/android_system_bt refs/changes/68/321268/2 && git cherry-pick FETCH_HEAD && git fetch https://github.com/LineageOS/android_system_bt refs/changes/69/321269/2 && git cherry-pick FETCH_HEAD && cd ../../
 cd build/make/ && git fetch https://github.com/LineageOS/android_build refs/changes/89/322389/2 && git cherry-pick FETCH_HEAD && cd ../../
 
+printf "\n"
+printf "${GREEN}===========================================\n"
+printf "JANUARY 2022 ASB SUCCESFULLY MERGED\n"
+printf "===========================================\n"
+printf "${NC}\n"
+
 # February 2022 ASB
 # cd vendor/qcom/opensource/commonsys/system/bt && git fetch https://github.com/LineageOS/android_vendor_qcom_opensource_system_bt refs/changes/34/323234/1 && git cherry-pick FETCH_HEAD && cd ../../../../../../
 cd build/make/ && git fetch https://github.com/LineageOS/android_build refs/changes/13/323313/4 && git cherry-pick FETCH_HEAD && cd ../../
+
+printf "\n"
+printf "${GREEN}===========================================\n"
+printf "FEBRUARY 2022 ASB SUCCESFULLY MERGED\n"
+printf "===========================================\n"
+printf "${NC}\n"
+
+# March 2022 ASB
+cd frameworks/base/ && git fetch https://github.com/LineageOS/android_frameworks_base refs/changes/66/325966/2 && git cherry-pick FETCH_HEAD && cd ../../
+cd frameworks/base/ && git fetch https://github.com/LineageOS/android_frameworks_base refs/changes/67/325967/2 && git cherry-pick FETCH_HEAD && cd ../../
+cd frameworks/base/ && git fetch https://github.com/LineageOS/android_frameworks_base refs/changes/68/325968/2 && git cherry-pick FETCH_HEAD && cd ../../
+cd frameworks/base/ && git fetch https://github.com/LineageOS/android_frameworks_base refs/changes/69/325969/2 && git cherry-pick FETCH_HEAD && cd ../../
+# cd frameworks/base/ && git fetch https://github.com/LineageOS/android_frameworks_base refs/changes/70/325970/2 && git cherry-pick FETCH_HEAD && cd ../../
+cd frameworks/base/ && git cherry-pick 1b0a47dfeca9e663a0e0a5f6b5ffaf7fbae96f59 && cd ../../
+# cd frameworks/base/ && git fetch https://github.com/LineageOS/android_frameworks_base refs/changes/71/325971/2 && git cherry-pick FETCH_HEAD && cd ../../
+cd frameworks/base/ && git cherry-pick 1b609677abeb7568328da4f615af32d8085ade29 && cd ../../
+cd packages/apps/Car/Settings && git fetch https://github.com/LineageOS/android_packages_apps_Car_Settings refs/changes/74/325974/2 && git cherry-pick FETCH_HEAD && cd ../../../../
+cd packages/apps/Dialer && git fetch https://github.com/LineageOS/android_packages_apps_Dialer refs/changes/75/325975/2 && git cherry-pick FETCH_HEAD && cd ../../../
+cd packages/apps/Dialer && git fetch https://github.com/LineageOS/android_packages_apps_Dialer refs/changes/76/325976/2 && git cherry-pick FETCH_HEAD && cd ../../../
+cd packages/apps/Dialer && git fetch https://github.com/LineageOS/android_packages_apps_Dialer refs/changes/77/325977/2 && git cherry-pick FETCH_HEAD && cd ../../../
+cd packages/apps/Dialer && git fetch https://github.com/LineageOS/android_packages_apps_Dialer refs/changes/78/325978/2 && git cherry-pick FETCH_HEAD && cd ../../../
+# cd packages/apps/Launcher3 && git fetch https://github.com/LineageOS/android_packages_apps_Trebuchet refs/changes/79/325979/2 && git cherry-pick FETCH_HEAD && cd ../../../
+cd packages/apps/RevengeLauncher && git fetch https://github.com/LG-G6/android_packages_apps_Launcher3.git dot11 && git cherry-pick 2b6efee05246156df6f0b1cfb89a62d53c9fcddb  && cd ../../../
+cd packages/apps/ManagedProvisioning && git fetch https://github.com/LineageOS/android_packages_apps_ManagedProvisioning refs/changes/80/325980/2 && git cherry-pick FETCH_HEAD && cd ../../../
+cd packages/apps/Settings && git fetch https://github.com/LineageOS/android_packages_apps_Settings refs/changes/81/325981/2 && git cherry-pick FETCH_HEAD && cd ../../../
+cd packages/apps/Settings && git fetch https://github.com/LineageOS/android_packages_apps_Settings refs/changes/82/325982/2 && git cherry-pick FETCH_HEAD && cd ../../../
+cd packages/providers/DownloadProvider && git fetch https://github.com/LineageOS/android_packages_providers_DownloadProvider refs/changes/84/325984/2 && git cherry-pick FETCH_HEAD && cd ../../../
+cd packages/providers/DownloadProvider && git fetch https://github.com/LineageOS/android_packages_providers_DownloadProvider refs/changes/85/325985/2 && git cherry-pick FETCH_HEAD && cd ../../../
+cd system/sepolicy/ && git fetch https://github.com/LineageOS/android_system_sepolicy refs/changes/86/325986/2 && git cherry-pick FETCH_HEAD && cd ../../
+cd build/make/ && git fetch https://github.com/LineageOS/android_build refs/changes/82/326182/1 && git cherry-pick FETCH_HEAD && cd ../../
+
+printf "\n"
+printf "${GREEN}===========================================\n"
+printf "MARCH 2022 ASB SUCCESFULLY MERGED\n"
+printf "===========================================\n"
+printf "${NC}\n"
