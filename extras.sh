@@ -6,7 +6,7 @@ NC='\033[0m' # No Color
 # PixelProps
 cd frameworks/base/
 git fetch https://github.com/LG-G6/android_frameworks_base.git dot11
-git cherry-pick d42b10a2fa811ab6cd4d35be2cc62c337524e5b1 ab71c4df6153ee8c578a02d60c2ee195878eccc5 8fab24487b8dfc51f5a100e711a698dddb015477 4c554dc643fae2d0d77fc71ae688c5655e673447
+git cherry-pick d42b10a2fa811ab6cd4d35be2cc62c337524e5b1 ab71c4df6153ee8c578a02d60c2ee195878eccc5 8fab24487b8dfc51f5a100e711a698dddb015477 4c554dc643fae2d0d77fc71ae688c5655e673447 74ecd4f56bded316f7b4206763f070c424c39d24
 cd ../../
 
 printf "\n"
@@ -94,5 +94,27 @@ cd build/make/ && git fetch https://github.com/LineageOS/android_build refs/chan
 printf "\n"
 printf "${GREEN}===========================================\n"
 printf "MARCH 2022 ASB SUCCESFULLY MERGED\n"
+printf "===========================================\n"
+printf "${NC}\n"
+
+# April 2022 ASB
+cd frameworks/av/ && git fetch https://github.com/LineageOS/android_frameworks_av refs/changes/19/328219/1 && git cherry-pick FETCH_HEAD && cd ../../
+cd frameworks/av/ && git fetch https://github.com/LineageOS/android_frameworks_av refs/changes/20/328220/1 && git cherry-pick FETCH_HEAD && cd ../../
+cd frameworks/base/ && git fetch https://github.com/LineageOS/android_frameworks_base refs/changes/21/328221/1 && git cherry-pick FETCH_HEAD && cd ../../
+cd frameworks/base/ && git fetch https://github.com/LineageOS/android_frameworks_base refs/changes/22/328222/1 && git cherry-pick FETCH_HEAD && cd ../../
+cd frameworks/base/ && git fetch https://github.com/LineageOS/android_frameworks_base refs/changes/23/328223/1 && git cherry-pick FETCH_HEAD && cd ../../
+cd frameworks/base/ && git fetch https://github.com/LineageOS/android_frameworks_base refs/changes/24/328224/1 && git cherry-pick FETCH_HEAD && cd ../../
+cd frameworks/base/ && git fetch https://github.com/LineageOS/android_frameworks_base refs/changes/25/328225/1 && git cherry-pick FETCH_HEAD && cd ../../
+cd packages/apps/Nfc && git fetch https://github.com/LineageOS/android_packages_apps_Nfc refs/changes/26/328226/1 && git cherry-pick FETCH_HEAD && cd ../../../
+cd packages/apps/Settings && git fetch https://github.com/LineageOS/android_packages_apps_Settings refs/changes/27/328227/1 && git cherry-pick FETCH_HEAD && cd ../../../
+cd packages/providers/MediaProvider && git fetch https://github.com/LineageOS/android_packages_providers_MediaProvider refs/changes/28/328228/1 && git cherry-pick FETCH_HEAD && cd ../../../
+cd system/bt && git fetch https://github.com/LineageOS/android_system_bt refs/changes/29/328229/1 && git cherry-pick FETCH_HEAD && cd ../../
+cd vendor/nxp/opensource/commonsys/packages/apps/Nfc && git fetch https://github.com/LineageOS/android_vendor_nxp_opensource_packages_apps_Nfc refs/changes/30/328230/1 && git cherry-pick FETCH_HEAD && cd ../../../../../../../
+cd vendor/qcom/opensource/commonsys/system/bt && git fetch https://github.com/LineageOS/android_vendor_qcom_opensource_system_bt refs/changes/31/328231/1 && git cherry-pick FETCH_HEAD && cd ../../../../../../
+cd build/make/core/ && sed -i 's/2022-03-05/2022-04-05/g' version_defaults.mk  && cd ../../../
+
+printf "\n"
+printf "${GREEN}===========================================\n"
+printf "April 2022 ASB SUCCESFULLY MERGED\n"
 printf "===========================================\n"
 printf "${NC}\n"
