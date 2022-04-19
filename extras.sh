@@ -14,5 +14,5 @@ cd ../../
 
 # PixelProps
 cd frameworks/base/
-git cherry-pick bdf722ffadd92ed4ef8b89fcd9e3b7338da1217b
+git cherry-pick bdf722ffadd92ed4ef8b89fcd9e3b7338da1217b 315e6da47ee13856117ae0e7cb40fc8aa301e2bb
 cd ../../
