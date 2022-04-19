@@ -110,7 +110,7 @@ cd packages/apps/Settings && git fetch https://github.com/LineageOS/android_pack
 cd packages/providers/MediaProvider && git fetch https://github.com/LineageOS/android_packages_providers_MediaProvider refs/changes/28/328228/1 && git cherry-pick FETCH_HEAD && cd ../../../
 cd system/bt && git fetch https://github.com/LineageOS/android_system_bt refs/changes/29/328229/1 && git cherry-pick FETCH_HEAD && cd ../../
 cd vendor/nxp/opensource/commonsys/packages/apps/Nfc && git fetch https://github.com/LineageOS/android_vendor_nxp_opensource_packages_apps_Nfc refs/changes/30/328230/1 && git cherry-pick FETCH_HEAD && cd ../../../../../../../
-cd vendor/qcom/opensource/commonsys/system/bt && git fetch https://github.com/LineageOS/android_vendor_qcom_opensource_system_bt refs/changes/31/328231/1 && git cherry-pick FETCH_HEAD && cd ../../../../../../
+#cd vendor/qcom/opensource/commonsys/system/bt && git fetch https://github.com/LineageOS/android_vendor_qcom_opensource_system_bt refs/changes/31/328231/1 && git cherry-pick FETCH_HEAD && cd ../../../../../../
 cd build/make/ && git fetch https://github.com/LineageOS/android_build refs/changes/44/328344/1 && git cherry-pick FETCH_HEAD && cd ../../
 
 printf "\n"
