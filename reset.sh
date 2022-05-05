@@ -1,5 +1,6 @@
 #!/bin/bash
 
+rm -rf build/make/ && repo sync --force-sync build/make/
 rm -rf packages/modules/NetworkStack/ && repo sync --force-sync packages/modules/NetworkStack/
 rm -rf frameworks/base/ && repo sync --force-sync frameworks/base/
 rm -rf vendor/lge/ && git clone https://github.com/LG-G6/proprietary_vendor_lge.git -b lineage-18.1 vendor/lge/
