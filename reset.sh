@@ -3,6 +3,7 @@
 rm .repo/local_manifests/roomservice.xml
 cp scripts/roomservice.xml .repo/local_manifests/
 
+rm -rf build/make/ && repo sync --force-sync build/make/
 rm -rf frameworks/base/ && repo sync --force-sync frameworks/base/
 rm -rf vendor/lge/ && repo sync --force-sync vendor/lge/
 rm -rf kernel/lge/msm8996/ && repo sync --force-sync kernel/lge/msm8996/
