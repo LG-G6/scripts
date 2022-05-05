@@ -1,5 +1,6 @@
 #!/bin/bash
 
+rm -rf build/make/
 rm -rf vendor/lge/
 rm -rf frameworks/base/
 rm -rf kernel/lge/msm8996/
