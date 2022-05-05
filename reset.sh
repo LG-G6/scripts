@@ -3,6 +3,7 @@
 rm .repo/local_manifests/roomservice.xml
 cp scripts/roomservice.xml .repo/local_manifests/
 
+rm -rf build/make/ && repo sync --force-sync build/make/
 rm -rf packages/modules/NetworkStack/ && repo sync --force-sync packages/modules/NetworkStack/
 rm -rf frameworks/base/ && repo sync --force-sync frameworks/base/
 rm -rf vendor/lge/ && repo sync --force-sync vendor/lge/
