@@ -6,7 +6,7 @@ NC='\033[0m' # No Color
 # PixelProps
 cd frameworks/base/
 git fetch https://github.com/LG-G6/android_frameworks_base.git dot11
-git cherry-pick d42b10a2fa811ab6cd4d35be2cc62c337524e5b1 ab71c4df6153ee8c578a02d60c2ee195878eccc5 8fab24487b8dfc51f5a100e711a698dddb015477 4c554dc643fae2d0d77fc71ae688c5655e673447 74ecd4f56bded316f7b4206763f070c424c39d24
+git cherry-pick d42b10a2fa811ab6cd4d35be2cc62c337524e5b1 ab71c4df6153ee8c578a02d60c2ee195878eccc5 8fab24487b8dfc51f5a100e711a698dddb015477 4c554dc643fae2d0d77fc71ae688c5655e673447 74ecd4f56bded316f7b4206763f070c424c39d24 b6939cb83dfa63a81386e3d9e773efee0403d69b
 cd ../../
 
 printf "\n"
@@ -115,6 +115,22 @@ cd build/make/ && git fetch https://github.com/LineageOS/android_build refs/chan
 
 printf "\n"
 printf "${GREEN}===========================================\n"
-printf "April 2022 ASB SUCCESFULLY MERGED\n"
+printf "APRIL 2022 ASB SUCCESFULLY MERGED\n"
+printf "===========================================\n"
+printf "${NC}\n"
+
+# May 2022 ASB
+cd frameworks/base && git fetch https://github.com/LineageOS/android_frameworks_base refs/changes/37/330737/1 && git cherry-pick FETCH_HEAD && cd ../../
+cd frameworks/base && git fetch https://github.com/LineageOS/android_frameworks_base refs/changes/38/330738/1 && git cherry-pick FETCH_HEAD && cd ../../
+cd frameworks/base && git fetch https://github.com/LineageOS/android_frameworks_base refs/changes/39/330739/1 && git cherry-pick FETCH_HEAD && cd ../../
+cd frameworks/base && git fetch https://github.com/LineageOS/android_frameworks_base refs/changes/40/330740/1 && git cherry-pick FETCH_HEAD && cd ../../
+cd frameworks/base && git fetch https://github.com/LineageOS/android_frameworks_base refs/changes/41/330741/1 && git cherry-pick FETCH_HEAD && cd ../../
+cd packages/apps/Settings && git fetch https://github.com/LineageOS/android_packages_apps_Settings refs/changes/42/330742/1 && git cherry-pick FETCH_HEAD && cd ../../../
+cd packages/services/Telecomm && git fetch https://github.com/LineageOS/android_packages_services_Telecomm refs/changes/43/330743/1 && git cherry-pick FETCH_HEAD && cd ../../../
+cd build/make && git fetch https://github.com/LineageOS/android_build refs/changes/81/330881/1 && git cherry-pick FETCH_HEAD && cd ../../
+
+printf "\n"
+printf "${GREEN}===========================================\n"
+printf "MAY 2022 ASB SUCCESFULLY MERGED\n"
 printf "===========================================\n"
 printf "${NC}\n"
