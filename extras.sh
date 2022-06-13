@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# repopick -t R_asb_2021-11
+# repopick -t R_asb_2022-06
 
 # microG support
 cd frameworks/base/
@@ -14,5 +14,5 @@ cd ../../
 
 # PixelProps
 cd frameworks/base/
-git cherry-pick bdf722ffadd92ed4ef8b89fcd9e3b7338da1217b 315e6da47ee13856117ae0e7cb40fc8aa301e2bb 5a3d49d2801b6f216dda611ee5c0b5078c11e9ef
+git cherry-pick bdf722ffadd92ed4ef8b89fcd9e3b7338da1217b 315e6da47ee13856117ae0e7cb40fc8aa301e2bb 5a3d49d2801b6f216dda611ee5c0b5078c11e9ef c322ce30871d4b1ccde293c7e105db9ab4bef966
 cd ../../
