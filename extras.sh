@@ -6,7 +6,7 @@ NC='\033[0m' # No Color
 # PixelProps
 cd frameworks/base/
 git fetch https://github.com/LG-G6/android_frameworks_base.git dot11
-git cherry-pick d42b10a2fa811ab6cd4d35be2cc62c337524e5b1 ab71c4df6153ee8c578a02d60c2ee195878eccc5 8fab24487b8dfc51f5a100e711a698dddb015477 4c554dc643fae2d0d77fc71ae688c5655e673447 74ecd4f56bded316f7b4206763f070c424c39d24 b6939cb83dfa63a81386e3d9e773efee0403d69b 1da856f6ba8077ae63fe9d166dfe963420985d24
+git cherry-pick d42b10a2fa811ab6cd4d35be2cc62c337524e5b1 ab71c4df6153ee8c578a02d60c2ee195878eccc5 8fab24487b8dfc51f5a100e711a698dddb015477 4c554dc643fae2d0d77fc71ae688c5655e673447 74ecd4f56bded316f7b4206763f070c424c39d24 b6939cb83dfa63a81386e3d9e773efee0403d69b 1da856f6ba8077ae63fe9d166dfe963420985d24 7fa6ff7a4d7ed0791014375b639d128b17e8925b
 cd ../../
 
 printf "\n"
@@ -169,5 +169,29 @@ cd build/make && git fetch https://github.com/LineageOS/android_build refs/chang
 printf "\n"
 printf "${GREEN}===========================================\n"
 printf "JUNE 2022 ASB SUCCESFULLY MERGED\n"
+printf "===========================================\n"
+printf "${NC}\n"
+
+# July 2022 ASB
+cd frameworks/base && git fetch https://github.com/LineageOS/android_frameworks_base refs/changes/90/333990/1 && git cherry-pick FETCH_HEAD && cd ../../
+cd frameworks/base && git fetch https://github.com/LineageOS/android_frameworks_base refs/changes/91/333991/1 && git cherry-pick FETCH_HEAD && cd ../../
+cd frameworks/base && git fetch https://github.com/LineageOS/android_frameworks_base refs/changes/92/333992/1 && git cherry-pick FETCH_HEAD && cd ../../
+cd frameworks/base && git fetch https://github.com/LineageOS/android_frameworks_base refs/changes/93/333993/1 && git cherry-pick FETCH_HEAD && cd ../../
+cd frameworks/base && git fetch https://github.com/LineageOS/android_frameworks_base refs/changes/94/333994/1 && git cherry-pick FETCH_HEAD && cd ../../
+cd frameworks/base && git fetch https://github.com/LineageOS/android_frameworks_base refs/changes/95/333995/1 && git cherry-pick FETCH_HEAD && cd ../../
+cd frameworks/opt/telephony && git fetch https://github.com/LineageOS/android_frameworks_opt_telephony refs/changes/96/333996/1 && git cherry-pick FETCH_HEAD && cd ../../../
+cd packages/apps/KeyChain && git fetch https://github.com/LineageOS/android_packages_apps_KeyChain refs/changes/97/333997/1 && git cherry-pick FETCH_HEAD && cd ../../../
+cd packages/apps/Settings && git fetch https://github.com/LineageOS/android_packages_apps_Settings refs/changes/98/333998/1 && git cherry-pick FETCH_HEAD && cd ../../../
+cd system/bt && git fetch https://github.com/LineageOS/android_system_bt refs/changes/99/333999/1 && git cherry-pick FETCH_HEAD && cd ../../
+cd system/bt && git fetch https://github.com/LineageOS/android_system_bt refs/changes/00/334000/1 && git cherry-pick FETCH_HEAD && cd ../../
+cd system/bt && git fetch https://github.com/LineageOS/android_system_bt refs/changes/01/334001/1 && git cherry-pick FETCH_HEAD && cd ../../
+cd vendor/qcom/opensource/commonsys/system/bt && git fetch https://github.com/LineageOS/android_vendor_qcom_opensource_system_bt refs/changes/02/334002/1 && git cherry-pick FETCH_HEAD && cd ../../../../../../
+cd vendor/qcom/opensource/commonsys/system/bt && git fetch https://github.com/LineageOS/android_vendor_qcom_opensource_system_bt refs/changes/03/334003/1 && git cherry-pick FETCH_HEAD && cd ../../../../../../
+cd vendor/qcom/opensource/commonsys/system/bt && git fetch https://github.com/LineageOS/android_vendor_qcom_opensource_system_bt refs/changes/04/334004/1 && git cherry-pick FETCH_HEAD && cd ../../../../../../
+cd build/make/ && git fetch https://github.com/LineageOS/android_build refs/changes/81/334181/1 && git cherry-pick FETCH_HEAD && cd ../../
+
+printf "\n"
+printf "${GREEN}===========================================\n"
+printf "JULY 2022 ASB SUCCESFULLY MERGED\n"
 printf "===========================================\n"
 printf "${NC}\n"
