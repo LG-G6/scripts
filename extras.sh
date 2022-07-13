@@ -83,7 +83,7 @@ cd system/bt && git fetch https://github.com/LineageOS/android_system_bt refs/ch
 # cd vendor/qcom/opensource/commonsys/system/bt && git fetch https://github.com/LineageOS/android_vendor_qcom_opensource_system_bt refs/changes/02/334002/1 && git cherry-pick FETCH_HEAD && cd ../../../../../../
 # cd vendor/qcom/opensource/commonsys/system/bt && git fetch https://github.com/LineageOS/android_vendor_qcom_opensource_system_bt refs/changes/03/334003/1 && git cherry-pick FETCH_HEAD && cd ../../../../../../
 # cd vendor/qcom/opensource/commonsys/system/bt && git fetch https://github.com/LineageOS/android_vendor_qcom_opensource_system_bt refs/changes/04/334004/1 && git cherry-pick FETCH_HEAD && cd ../../../../../../
-cd build/make/core/ && sed -i 's/2022-06-05/2022-07-05/g' version_defaults.mk  && cd ../../../
+cd build/make/ && git fetch https://github.com/LineageOS/android_build refs/changes/81/334181/1 && git cherry-pick FETCH_HEAD && cd ../../
 
 printf "\n"
 printf "${GREEN}===========================================\n"
