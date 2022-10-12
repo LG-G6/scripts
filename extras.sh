@@ -6,7 +6,7 @@ NC='\033[0m' # No Color
 # PixelProps
 cd frameworks/base/
 git fetch https://github.com/LG-G6/android_frameworks_base.git dot11
-git cherry-pick d42b10a2fa811ab6cd4d35be2cc62c337524e5b1 ab71c4df6153ee8c578a02d60c2ee195878eccc5 8fab24487b8dfc51f5a100e711a698dddb015477 4c554dc643fae2d0d77fc71ae688c5655e673447 74ecd4f56bded316f7b4206763f070c424c39d24 b6939cb83dfa63a81386e3d9e773efee0403d69b 1da856f6ba8077ae63fe9d166dfe963420985d24 7fa6ff7a4d7ed0791014375b639d128b17e8925b d5557bbd2ec55300f38a4ec3fc1d5033ba91f020
+git cherry-pick d42b10a2fa811ab6cd4d35be2cc62c337524e5b1 ab71c4df6153ee8c578a02d60c2ee195878eccc5 8fab24487b8dfc51f5a100e711a698dddb015477 4c554dc643fae2d0d77fc71ae688c5655e673447 74ecd4f56bded316f7b4206763f070c424c39d24 b6939cb83dfa63a81386e3d9e773efee0403d69b 1da856f6ba8077ae63fe9d166dfe963420985d24 7fa6ff7a4d7ed0791014375b639d128b17e8925b d5557bbd2ec55300f38a4ec3fc1d5033ba91f020 fd9cf32eedc20ec637a8cf15d22e6b8c10ab7a6f d7adca8856992a180d13c1dd3c8d503e46f94378
 cd ../../
 
 printf "\n"
@@ -224,5 +224,51 @@ cd build/make && git fetch https://github.com/LineageOS/android_build refs/chang
 printf "\n"
 printf "${GREEN}===========================================\n"
 printf "AUGUST 2022 ASB SUCCESFULLY MERGED\n"
+printf "===========================================\n"
+printf "${NC}\n"
+
+# September 2022 ASB
+cd external/expat && git fetch https://github.com/LineageOS/android_external_expat refs/changes/66/337966/1 && git cherry-pick FETCH_HEAD && cd ../../
+cd external/expat && git fetch https://github.com/LineageOS/android_external_expat refs/changes/67/337967/1 && git cherry-pick FETCH_HEAD && cd ../../
+cd external/expat && git fetch https://github.com/LineageOS/android_external_expat refs/changes/68/337968/1 && git cherry-pick FETCH_HEAD && cd ../../
+cd external/expat && git fetch https://github.com/LineageOS/android_external_expat refs/changes/69/337969/1 && git cherry-pick FETCH_HEAD && cd ../../
+cd frameworks/av && git fetch https://github.com/LineageOS/android_frameworks_av refs/changes/70/337970/1 && git cherry-pick FETCH_HEAD && cd ../../
+cd frameworks/base && git fetch https://github.com/LineageOS/android_frameworks_base refs/changes/71/337971/1 && git cherry-pick FETCH_HEAD && cd ../../
+cd frameworks/base && git fetch https://github.com/LineageOS/android_frameworks_base refs/changes/72/337972/1 && git cherry-pick FETCH_HEAD && cd ../../
+cd frameworks/base && git fetch https://github.com/LineageOS/android_frameworks_base refs/changes/73/337973/1 && git cherry-pick FETCH_HEAD && cd ../../
+cd packages/providers/MediaProvider && git fetch https://github.com/LineageOS/android_packages_providers_MediaProvider refs/changes/74/337974/1 && git cherry-pick FETCH_HEAD && cd ../../../
+# cd vendor/qcom/opensource/commonsys/system/bt && git fetch https://github.com/LineageOS/android_vendor_qcom_opensource_system_bt refs/changes/75/337975/1 && git cherry-pick FETCH_HEAD && cd ../../../../../../
+# cd vendor/qcom/opensource/commonsys/system/bt && git fetch https://github.com/LineageOS/android_vendor_qcom_opensource_system_bt refs/changes/76/337976/1 && git cherry-pick FETCH_HEAD && cd ../../../../../../
+# cd vendor/qcom/opensource/commonsys/system/bt && git fetch https://github.com/LineageOS/android_vendor_qcom_opensource_system_bt refs/changes/77/337977/1 && git cherry-pick FETCH_HEAD && cd ../../../../../../
+cd build/make/ && git fetch https://github.com/LineageOS/android_build refs/changes/26/338226/1 && git cherry-pick FETCH_HEAD && cd ../../
+
+printf "\n"
+printf "${GREEN}===========================================\n"
+printf "SEPTEMBER 2022 ASB SUCCESFULLY MERGED\n"
+printf "===========================================\n"
+printf "${NC}\n"
+
+# October 2022 ASB
+cd external/dtc && git fetch https://github.com/LineageOS/android_external_dtc refs/changes/72/340872/1 && git cherry-pick FETCH_HEAD && cd ../../
+cd frameworks/av && git fetch https://github.com/LineageOS/android_frameworks_av refs/changes/73/340873/2 && git cherry-pick FETCH_HEAD && cd ../../
+cd frameworks/base && git fetch https://github.com/LineageOS/android_frameworks_base refs/changes/74/340874/2 && git cherry-pick FETCH_HEAD && cd ../../
+cd frameworks/base && git fetch https://github.com/LineageOS/android_frameworks_base refs/changes/75/340875/2 && git cherry-pick FETCH_HEAD && cd ../../
+cd frameworks/base && git fetch https://github.com/LineageOS/android_frameworks_base refs/changes/76/340876/2 && git cherry-pick FETCH_HEAD && cd ../../
+cd frameworks/base && git fetch https://github.com/LineageOS/android_frameworks_base refs/changes/77/340877/2 && git cherry-pick FETCH_HEAD && cd ../../
+cd frameworks/base && git fetch https://github.com/LineageOS/android_frameworks_base refs/changes/78/340878/2 && git cherry-pick FETCH_HEAD && cd ../../
+cd frameworks/base && git fetch https://github.com/LineageOS/android_frameworks_base refs/changes/79/340879/2 && git cherry-pick FETCH_HEAD && cd ../../
+cd frameworks/base && git fetch https://github.com/LineageOS/android_frameworks_base refs/changes/00/340900/2 && git cherry-pick FETCH_HEAD && cd ../../
+cd frameworks/base && git fetch https://github.com/LineageOS/android_frameworks_base refs/changes/01/340901/2 && git cherry-pick FETCH_HEAD && cd ../../
+cd packages/apps/Settings && git fetch https://github.com/LineageOS/android_packages_apps_Settings refs/changes/02/340902/2 && git cherry-pick FETCH_HEAD && cd ../../../
+cd packages/providers/MediaProvider && git fetch https://github.com/LineageOS/android_packages_providers_MediaProvider refs/changes/03/340903/2 && git cherry-pick FETCH_HEAD && cd ../../../
+cd system/bt && git fetch https://github.com/LineageOS/android_system_bt refs/changes/04/340904/2 && git cherry-pick FETCH_HEAD && cd ../../
+cd system/nfc && git fetch https://github.com/LineageOS/android_system_nfc refs/changes/05/340905/2 && git cherry-pick FETCH_HEAD && cd ../../
+cd vendor/nxp/opensource/commonsys/external/libnfc-nci/ && git fetch https://github.com/LineageOS/android_vendor_nxp_opensource_external_libnfc-nci refs/changes/06/340906/1 && git cherry-pick FETCH_HEAD && cd ../../../../../../ 
+# cd vendor/qcom/opensource/commonsys/system/bt && git fetch https://github.com/LineageOS/android_vendor_qcom_opensource_system_bt refs/changes/07/340907/1 && git cherry-pick FETCH_HEAD && cd ../../../../../../
+cd build/make/ && git fetch https://github.com/LineageOS/android_build refs/changes/16/341016/1 && git cherry-pick FETCH_HEAD && cd ../../
+
+printf "\n"
+printf "${GREEN}===========================================\n"
+printf "OCTOBER 2022 ASB SUCCESFULLY MERGED\n"
 printf "===========================================\n"
 printf "${NC}\n"
