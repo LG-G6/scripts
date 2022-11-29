@@ -5,7 +5,7 @@ NC='\033[0m' # No Color
 
 # PixelProps
 cd frameworks/base/
-git cherry-pick 96cac8f5808828b6e5979559f148ede774048a0f c25578e3f73fac62bf3ffd01a509649cc1696aa8 b9fe05dda5c9e1b74b519bd46e4d87a986578993
+git cherry-pick 96cac8f5808828b6e5979559f148ede774048a0f c25578e3f73fac62bf3ffd01a509649cc1696aa8 b9fe05dda5c9e1b74b519bd46e4d87a986578993 dc1ff9b0e8c9cb68c8e92256e6ea85d8dc5c4e7f
 cd ../../
 
 printf "\n"
