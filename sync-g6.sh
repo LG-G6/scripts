@@ -3,7 +3,7 @@
 rm -rf build/make/
 rm -rf vendor/lge/
 rm -rf frameworks/base/
-rm -rf packages/modules/Permission/
+# rm -rf packages/modules/Permission/
 rm -rf kernel/lge/msm8996/
 rm -rf device/lge/msm8996-common/
 rm -rf device/lge/
