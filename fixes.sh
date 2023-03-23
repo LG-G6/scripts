@@ -2,6 +2,6 @@
 
 # Cam fix for LG G6
 cd frameworks/base/
-git fetch https://github.com/LG-G6/android_frameworks_base.git lineage-18.1
-git cherry-pick 08284b856f1fc64f8695daefcd0f4e75fdba1219 048c46b54c8fd7ea76db12abb5cbefde76f6b38c
+git fetch https://github.com/LG-G6/android_frameworks_base.git lineage-19.1
+git cherry-pick 78baf4d927e0dfff0b9586cfd156e97541988949
 cd ../../
