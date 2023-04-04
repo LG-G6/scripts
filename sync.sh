@@ -2,6 +2,7 @@
 
 rm -rf build/make/
 rm -rf frameworks/base/
+rm -rf packages/apps/Nfc
 rm -rf device/lge/h830
 rm -rf device/lge/h850
 rm -rf device/lge/rs988
