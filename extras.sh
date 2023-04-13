@@ -5,15 +5,15 @@
 
 # microG support
 cd frameworks/base/
-git cherry-pick f2f1deb9929e08b7e5f560cc833a17a9ce645b87
+git cherry-pick e97d3c3556392d4268aef2a7ed011bd6e0c81485
 cd ../../
 
 # Charging animation
 cd frameworks/base/
-git cherry-pick 4378ebf9dfa5652398df60da3f48911babbd9307
+git cherry-pick af516fbcdb01b703f45f2fb24833a2a62d3a7e92
 cd ../../
 
 # PixelProps
 cd frameworks/base/
-git cherry-pick 0bb67a11577a46d051ef2eb1fde020e8dc5f7c09
+git cherry-pick a7bf62448e1631e77508bb2fb822d12a3d8fa3a1
 cd ../../
