@@ -14,7 +14,7 @@ rm -rf device/lge/us997/
 repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
 source build/envsetup.sh
 
-source scripts/fixes.sh
 source scripts/extras.sh
+source scripts/fixes.sh
 
 rm -rf packages/apps/Updater/
