@@ -23,3 +23,4 @@ source scripts/fixes.sh
 source scripts/extras.sh
 
 rm -rf packages/apps/Updater/
+rm -rf packages/apps/FMRadio/
