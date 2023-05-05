@@ -17,3 +17,9 @@ cd device/lge/g6-common
 git fetch https://github.com/LG-G6/android_device_lge_g6-common.git lineage-19.1
 git cherry-pick b3edeba5ac6500c145fec7222ffc696c9b819af0
 cd ../../../
+
+# Selinux: keep it permissive
+cd device/lge/msm8996-common
+git fetch https://github.com/LG-G6/android_device_lge_msm8996-common.git lineage-19.1
+git cherry-pick 4989e66052d916c5747df572c5cc9e4070c0f9f0
+cd ../../../
