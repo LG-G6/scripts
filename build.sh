@@ -1,6 +1,6 @@
 #!/bin/bash
 source scripts/sync.sh
-make clean
+rm -rf out/target/product/*
 brunch h872
 brunch h870
 brunch us997
