@@ -15,6 +15,6 @@ cd ~/android/los19/out/target/product/h870/ && mv *.zip *.md5sum ~/android/build
 cd ~/android/builds/lineage/h870/ && rm lineage_h870-ota*.zip *.md5sum
 sftp bernardobas@frs.sourceforge.net:/home/pfs/project/lg-g6/LineageOS\ 19.1/H870/ <<< $'put *.*'
 
-echo -e "\nAndroid builds completed and uploaded\n";
+echo -e "\nLG G6 builds completed and uploaded\n";
 
 cd ~/android/los19/
