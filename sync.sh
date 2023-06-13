@@ -15,11 +15,10 @@ rm -rf device/lge/msm8996-common/
 rm -rf hardware/lge
 rm -rf kernel/lge/msm8996/
 rm -rf vendor/lge/
+rm -rf vendor/lineage/
 
 repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
 source build/envsetup.sh
 
 source scripts/fixes.sh
 source scripts/extras.sh
-
-rm -rf packages/apps/Updater/

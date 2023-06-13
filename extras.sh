@@ -17,3 +17,9 @@ cd ../../
 cd frameworks/base/
 git cherry-pick a7bf62448e1631e77508bb2fb822d12a3d8fa3a1 43934d737d6f503c5f07350210a502f4e657a4f2 f0f86537c2db8bb52b43f6466998c488d229e2dc
 cd ../../
+
+# Updater
+cd vendor/lineage
+git fetch https://github.com/LG-G6/android_vendor_lineage.git lineage-19.1
+git cherry-pick 8246f8702827e7ca209e607dcc17cf4f1dba998f
+cd ../../
