@@ -6,9 +6,6 @@ git fetch https://github.com/LG-G6/android_frameworks_base.git lineage-19.1
 git cherry-pick 4ab327676f8d0435d8565c5413782866338dc49c
 cd ../../
 
-# NFC fix until it's merged into 19.1 branch
-repopick -f 306238 308305
-
 # Mixer: adjust input volume levels 
 cd device/lge/g6-common
 git fetch https://github.com/LG-G6/android_device_lge_g6-common.git dev/lineage-19.1
