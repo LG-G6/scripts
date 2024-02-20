@@ -3,4 +3,4 @@
 source scripts/upload-g5.sh
 source scripts/upload-g6.sh
 
-cd ~/android/los20/
+cd ~/android/los21/
